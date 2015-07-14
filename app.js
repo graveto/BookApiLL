@@ -3,7 +3,10 @@ var express = require("express");
 var app = express();
 
 app.get("/", function(req, res) {
-  // res.send("Hellooooooo");
+  res.send("Hellooooooo");
+});
+
+app.get("/api/jim", function(req, res) {
   res.json({
     name: "Jim",
     game: "node"

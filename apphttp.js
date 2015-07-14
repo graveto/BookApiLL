@@ -6,6 +6,12 @@ var app = http.createServer(function(req, res) {
   }else if(req.url === "/foo/") {
     res.end(req.url);
   }else{
-    res.end("No know path");
+    res.end("No known path");
   }
-}).listen(3333);
+});
+
+var port = 3333;
+
+app.listen(port, function(){
+  console.log("running on " + port);
+});
